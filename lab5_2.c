@@ -45,6 +45,6 @@ int main()
 	 
    } while(input != 'q');   
 
-   printf("Buy~~~~~!\n");
+   printf("Bye~~~~~!\n");
    return 0;
 }
