@@ -1,0 +1,9 @@
+version: "2"
+services:
+    kmitlos:
+      build: build/ubuntu16.04
+      container_name: kmitlos
+      restart: always
+      volumes:
+        - .:/var/kmitlos
+    
