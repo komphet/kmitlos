@@ -16,13 +16,22 @@ int main()
      		cpid = fork();
      		if(cpid == 0){
      			execlp("/bin/ls", "ls", NULL);
-     			exit();
+     			break;
+     			exit(0);
      		}
-     		break;
+     		
+     	case 'b': break;
+     	case 'c': break;
+     	case 'q': 
+     		exit(0);
+			break;
+     	default:
+     		printf("You are idiot!!! WTFFFFF!!! Just read command idiot!!\n");
      }
-     
+     wait(NULL);
+     printf("=================================================\n");
    } while(input != 'q');   
 
-   printf("Hello, World!\n");
+   printf("Buy~~~~~!\n");
    return 0;
 }
